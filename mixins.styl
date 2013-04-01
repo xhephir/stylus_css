@@ -1,7 +1,30 @@
-// transition(PROPERTY DURATION DELAY(OPTIONAL) TIMING-FINCTION);
+// transition(PROPERTY DURATION DELAY(OPTIONAL) TIMING-FINCTION)
 transition(tran)
     -webkit-transition tran
     -moz-transition tran
     -ms-transition tran
     -o-transition tran
     transition tran
+
+// rounded(value) Default 4px
+
+rounded(radius = 4px)
+    -webkit-border-radius radius
+    -moz-border-radius radius
+    border-radius radius
+
+// box-shadow(HORIZONTAL VERTICAL BLUR COLOR))
+
+box-shadow(shadow = 0 1px 3px rgba(0,0,0,.25))
+    -webkit-box-shadow shadow
+    -moz-box-shadow shadow
+    box-shadow shadow
+
+//animation(ANIMATION-NAME, TIMING-FINCTION, ITERATION-COUNT, DURATION, DIRECTION)
+
+animation(aname, timing = ease-in-out, icount = infinite, duration = 10s, direction = alternate)
+    animation-name aname
+    animation-timing-function timing
+    animation-iteration-count icount
+    animation-duration duration
+    animation-direction direction
