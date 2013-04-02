@@ -28,3 +28,9 @@ animation(aname, timing = ease-in-out, icount = infinite, duration = 10s, direct
     animation-iteration-count icount
     animation-duration duration
     animation-direction direction
+
+//opacity(value) Default 1
+opacity(value=1)
+    opacity value
+    -ms-filter s("progid:DXImageTransform.Microsoft.Alpha(Opacity=%s)",value*100)
+    filter s("alpha(opacity=%s)", value)
